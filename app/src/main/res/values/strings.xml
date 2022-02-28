@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Rick and Morty - graphql app</string>
+    <string name="main_header">Rick and Morty</string>
+    <string name="nameTv">Name : </string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

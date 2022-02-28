@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginLeft="24dp"
+    android:layout_marginTop="22dp"
+    android:layout_marginRight="24dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/item_row_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:src="@drawable/test1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/item_row_id_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:fontFamily="@font/roboto"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:text=""
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/item_row_image_view" />
+
+        <TextView
+            android:id="@+id/item_row_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:fontFamily="@font/roboto"
+            android:text="#id: "
+            android:layout_marginTop="8dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/item_row_id_tv"
+            app:layout_constraintTop_toBottomOf="@+id/item_row_image_view" />
+
+        <TextView
+            android:id="@+id/item_row_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:fontFamily="@font/roboto"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="16dp"
+            android:text="Name: "
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_row_id_tv" />
+
+        <TextView
+            android:id="@+id/item_row_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/item_row_name_tv"
+            app:layout_constraintTop_toBottomOf="@id/item_row_id_tv" />
+
+
+        <TextView
+            android:id="@+id/item_row_location_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/roboto"
+            android:text="Location: "
+            android:layout_marginTop="8dp"
+            android:paddingBottom="16dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_row_name_tv" />
+
+
+        <TextView
+            android:id="@+id/item_row_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/roboto"
+            android:text=""
+            android:layout_marginTop="8dp"
+            android:paddingBottom="16dp"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/item_row_location_tv"
+            app:layout_constraintTop_toBottomOf="@id/item_row_name_tv"
+
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
